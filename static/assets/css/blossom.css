@@ -1,0 +1,27 @@
+/* blossom visual theme — keeps Interstellar's existing navigation and launch behavior intact */
+:root {
+  --background:#080609; --surface:#120d13; --surface-card:#151017; --surface-tile:#1b121b;
+  --surface-raised:#241522; --surface-overlay:#211622; --surface-input:#160f18;
+  --surface-button:#251725; --surface-button-hover:#382039; --surface-hover:#28182b;
+  --surface-active:#432344; --surface-nav:rgba(15,8,16,.86); --surface-nav-active:rgba(235,139,193,.12);
+  --border:rgba(242,158,207,.16); --border-subtle:rgba(242,158,207,.08); --border-strong:rgba(242,158,207,.42);
+  --text:#fff4fa; --text-muted:#c6a8ba; --text-faint:#8f7184;
+  --accent:#f09acb; --accent-hover:#ffc1e3; --accent-text:#170b13;
+  --tab:#1a111c; --tab-active:#3b2140; --tab-hover:#2a1930; --tab-border:rgba(240,154,203,.2);
+  --brand-text:#f6b3d8; --radius-md:14px; --radius-lg:20px;
+}
+html,body { background-color:#080609 !important; color:#fff4fa; }
+body { background-image:radial-gradient(ellipse at 50% 0%,rgba(133,50,102,.12),transparent 55%),var(--background-image); }
+.nav-bar { border:1px solid rgba(240,154,203,.13); background:rgba(12,7,13,.88); box-shadow:0 12px 38px rgba(0,0,0,.32); }
+.nav-bar .icon,.nav-bar-right,.nav-bar-right .navbar-link { color:#f6b3d8; }
+.nav-bar .icon:hover,.nav-bar-right .navbar-link:hover { color:#ffd0e9; text-shadow:0 0 20px rgba(240,154,203,.35); }
+.title { text-transform:none !important; letter-spacing:-.055em; font-weight:800; color:#f7b7da !important; text-shadow:0 0 36px rgba(228,105,174,.16); }
+.search-container input,.truncate,.input-container input,#search,select { border:1px solid rgba(240,154,203,.18); background:#140d16; color:#fff4fa; border-radius:16px; box-shadow:0 8px 28px rgba(0,0,0,.2); }
+.search-container input:focus,.truncate:focus,.input-container input:focus,#search:focus,select:focus { border-color:#e88fc1; box-shadow:0 0 0 3px rgba(232,143,193,.1),0 8px 28px rgba(0,0,0,.2); }
+#splash { color:#b997ab; }
+.input-container { margin-top:145px; }
+.column { background:linear-gradient(145deg,#201522,#130e15); border:1px solid rgba(240,154,203,.12); border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.16); overflow:hidden; }
+.column:hover { border-color:rgba(240,154,203,.45); box-shadow:0 18px 38px rgba(0,0,0,.34),0 0 24px rgba(232,143,193,.08); }
+.column p { color:#ffeaf5; }
+#apps-container { padding:0 24px 48px; }
+@media(max-width:700px) { .nav-bar { margin:8px; padding:0 14px; min-height:64px; } .title { font-size:clamp(48px,13vw,80px); } .truncate { width:min(84vw,550px); } .input-container { margin-top:110px; } }
