@@ -103,7 +103,7 @@
     const isLightTheme = ["light", "cream", "parchment", "latte"].includes(themeId);
     const navLogo = document.getElementById("nav-logo");
     if (navLogo) {
-      navLogo.src = isPastelTheme || !isLightTheme ? "/assets/media/favicon/main.png" : "/assets/media/favicon/main-inverted.png";
+      navLogo.src = "/assets/media/blossom-tree.svg";
     }
   }
 
