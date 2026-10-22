@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lightThemes = ["light", "cream", "parchment", "latte"];
     const isPastelTheme = String(themeId).startsWith("pastel");
     const isLightTheme = lightThemes.includes(themeId);
-    const LogoUrl = isPastelTheme ? "/assets/media/favicon/main.png" : isLightTheme ? "/assets/media/favicon/main-inverted.png" : "/assets/media/favicon/main.png";
+    const LogoUrl = "/assets/media/blossom-tree.svg";
     const html = `
       <div id="icon-container">
         <a class="icon" href="/home"><img alt="nav" id="nav-logo" src="${LogoUrl}"/></a>
